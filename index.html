@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Center - Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Stylish&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <div class="navbar">
+        <!-- <img src="logo.png" alt="HealthCare Center Logo" class="logo"> -->
+        <a href="#" class="logo">HealthCare</a>
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <a href="#services" class="dropbtn">Services</a>
+            <div class="dropdown-content">
+                <a href="#Emergency Car">Emergency Care</a>
+                <a href="#Inpatient Services">Inpatient Services</a>
+                <a href="#Outpatient Services">Outpatient Services</a>
+                <a href="Surgical Services">Surgical Services</a>
+                <a href="Diagnostic Imaging">Diagnostic Imaging</a>
+            </div>
+        </div>
+        <a href="appointment.html" target="_blank" id="bookAppointmentBtn" onclick="toggleBookingForm()">Book Appointment</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+
+
+    <div class="hero" id="home">
+        <h1>Welcome to HealthCare Center</h1>
+        <p>Your health is our priority. Book an appointment with our expert doctors today.</p>
+    </div>
+
+
+    <!-- section -->
+    <div class="section">
+        <div class="box">
+            <i class="fa-solid fa-hospital"></i>
+            <div class="write">
+                <p style="color: black;" id="para"><b>Emergency Care</b></p>
+                <p id="para1">Immediate treatment for acute illnesses or injuries that require urgent attention.
+
+                </p>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-hospital"></i>
+
+            <div class="write">
+                <p style="color: black;" id="para"><b>Inpatient Services</b></p>
+                <p id="para1">Hospitalization for patients who need to stay overnight or longer for treatment and
+                    recovery. 
+                </p>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-hospital"></i>
+
+            <div class="write">
+                <p style="color: black;" id="para"><b>Outpatient Services</b></p>
+                <p id="para1">Medical care that doesn’t require an overnight stay, including routine check-ups, minor
+                    procedures, and diagnostic tests.
+                </p>
+
+            </div>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-hospital"></i>
+            <div class="write">
+                <p style="color: black;" id="para"><b>Surgical Services</b></p>
+                <p id="para1">A range of surgeries from minor procedures to major operations, often including
+                    pre-operative and post-operative care. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="services" id="services">
+        <div class="service">
+            <h2>General Check-up</h2>
+            <p>Regular health exams and tests can help find problems before they start.</p>
+        </div>
+        <div class="service">
+            <h2>Youth Wellness</h2>
+            <p>Providing specialized health care to support the growth and development of children and teens.</p>
+        </div>
+        
+        <div class="service">
+            <h2>Specialist Consultation</h2>
+            <p>Access top specialists for in-depth health consultations.</p>
+        </div>
+    </div>
+
+    <div class="quotes-section">
+        <div class="quote">
+            "Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship."
+        </div>
+        <div class="quote-author">- Buddha</div>
+    </div>
+
+    <div class="image-section">
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Doctor and Patient">
+        </div>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/3825586/pexels-photo-3825586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Medical Team">
+        </div>
+        <div class="image-container">
+            <img src="https://images.pexels.com/photos/3683041/pexels-photo-3683041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Healthcare Services">
+        </div>
+    </div>
+
+    <div id="bookingForm" style="display: none;">
+        <h2>Book an Appointment</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+     
+    <footer>
+        <div class="foot-img">
+            <p id="footh1"><b>CONTACT US</b></p>
+            <hr class="hr">
+            <div class="foot-main">
+                <div class="map">
+                    <img src="https://images.pexels.com/photos/4386516/pexels-photo-4386516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="no image found">
+
+                </div>
+                <div class="form">
+                    <div class="input-form">
+                        <form action="/">
+                            <input type="text" name="name" placeholder="Your name" id="text">
+                            <input type="email" name="email" id="email" placeholder="Your Email" class="email">
+
+
+                        </form>
+
+                    </div>
+                    <div class="text-form">
+
+                        <textarea name="text" id="" rows="7" cols="60" placeholder="Your message.."></textarea>
+
+                    </div>
+                    <button>SEND MESSAGE</button>
+                </div>
+            </div>
+
+            <!-- bottom footer -->
+
+            <div class="last-footer">
+                <div class="copyright">
+
+                    <p>Copyright @2024 Company - Designs <b style="color: red;">Template</b></p>
+                </div>
+                <div class="icon-text">
+                    <div class="icon1">
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </div>
+                    <div class="icon1">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon1">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <div class="icon1">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="icon1">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
